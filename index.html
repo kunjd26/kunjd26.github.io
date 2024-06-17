@@ -31,12 +31,19 @@
         strong:hover {
             color: #a51c30;
         }
+
+        @media (max-width: 640px) {
+            .img-sm {
+                width: 70%;
+                height: auto;
+            }
+        }
     </style>
 </head>
 
 <body class="bg-gray-100 text-gray-800">
     <div class="max-w-5xl mx-auto p-6">
-        <div class="bg-white p-6 rounded-none flex items-center justify-between">
+        <div class="bg-white p-6 rounded-none flex flex-col sm:flex-row items-center justify-between">
             <div>
                 <h1 class="text-4xl font-bold">Kunj D. Patel</h1>
                 <p>Surat, Gujarat, India 395007</p>
@@ -44,10 +51,9 @@
                 <p><a href="tel:+918758199000" class="text-highlight">+91 875 819 9000</a></p>
                 <p><a href="https://github.com/kunjd26" class="text-highlight">github.com/kunjd26</a></p>
                 <p><a href="https://linkedin.com/in/kunjd26" class="text-highlight">linkedin.com/in/kunjd26</a></p>
-                <p><a href="./kunj.pdf"
-                        class="text-highlight">Resume</a></p>
+                <p><a href="./kunj.pdf" class="text-highlight">Resume</a></p>
             </div>
-            <img src="/photo.jpg" alt="Kunj D. Patel" class="w-40 h-40 object-contain">
+            <img src="/photo.jpg" alt="Kunj D. Patel" class="w-40 h-40 object-contain img-sm">
         </div>
 
         <div class="bg-white p-6 rounded-none mt-6">
